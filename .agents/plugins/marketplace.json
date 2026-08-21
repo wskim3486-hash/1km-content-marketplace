@@ -1,0 +1,20 @@
+{
+  "name": "1km-content-marketplace",
+  "interface": {
+    "displayName": "1km 콘텐츠 마켓플레이스"
+  },
+  "plugins": [
+    {
+      "name": "1km-content-production",
+      "source": {
+        "source": "local",
+        "path": "./plugins/1km-content-production"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
