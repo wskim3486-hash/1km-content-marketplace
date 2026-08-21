@@ -1,0 +1,9 @@
+interface:
+  display_name: 1km 아이템 발굴
+  short_description: 뉴스 랭킹 근거와 함께 비정치 아이템 후보를 찾습니다.
+  default_prompt: Use $1km-find-items to find and rank ten timely non-political topics
+    for the 1km YouTube channel.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

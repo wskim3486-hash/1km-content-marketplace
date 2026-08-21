@@ -1,0 +1,8 @@
+{
+  "name": "1km-content-production",
+  "version": "1.3.0",
+  "description": "1km 유튜브 콘텐츠 아이템 발굴부터 검증된 촬영 대본까지 제작하는 Claude Code 플러그인",
+  "author": {
+    "name": "1km"
+  }
+}
