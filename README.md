@@ -10,21 +10,24 @@ Windows에서 GPT/Codex, Claude Code, Gemini CLI로 사용할 수 있습니다.
 
 ### 처음 한 번만 설치하기
 
-1. Windows에서 **PowerShell**을 엽니다.
-ㄱ.키보드의 Windows 키를 누릅니다.
-ㄴ.PowerShell을 입력합니다.
-ㄷ.검색 결과에서 Windows PowerShell을 클릭합니다.
-2. 아래 두 줄을 한 줄씩 복사해 실행합니다.
+1. Windows에서 **터미널(PowerShell)**을 엽니다.
+
+   ① 키보드의 **Windows 키**를 누릅니다.  
+   ② `PowerShell`을 입력합니다.  
+   ③ 검색 결과에서 **Windows PowerShell**을 클릭합니다.
+
+2. 아래 명령어를 **한 줄씩** 복사하여 PowerShell 창에 붙여넣고, 줄마다 Enter를 누릅니다.
 
 ```powershell
 codex plugin marketplace add wskim3486-hash/1km-content-marketplace
 codex plugin add 1km-content-production@1km-content-marketplace
 ```
 
-3. Codex에서 새 작업을 엽니다.
-4. `1km 콘텐츠 제작` 플러그인이 보이면 설치가 끝난 것입니다.
+3. 설치가 끝나면 Codex에서 새 작업을 엽니다.
 
-명령을 찾을 수 없다는 메시지가 나오면 Codex를 먼저 설치한 뒤 다시 실행하세요.
+4. `1km 콘텐츠 제작` 플러그인이 보이면 설치가 완료된 것입니다.
+
+`codex` 명령을 찾을 수 없다는 메시지가 나오면 Codex를 먼저 설치한 뒤 다시 시도하세요. 관리자 권한으로 PowerShell을 열 필요는 없습니다.
 
 ### 바로 사용하기
 
