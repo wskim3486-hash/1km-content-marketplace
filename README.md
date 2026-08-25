@@ -11,10 +11,10 @@ Windows에서 GPT/Codex, Claude Code, Gemini CLI로 사용할 수 있습니다.
 ### 처음 한 번만 설치하기
 
 1. Windows에서 **PowerShell**을 엽니다.
--키보드의 Windows 키를 누릅니다.
--PowerShell을 입력합니다.
--검색 결과에서 Windows PowerShell을 클릭합니다.
-3. 아래 두 줄을 한 줄씩 복사해 실행합니다.
+ㄱ.키보드의 Windows 키를 누릅니다.
+ㄴ.PowerShell을 입력합니다.
+ㄷ.검색 결과에서 Windows PowerShell을 클릭합니다.
+2. 아래 두 줄을 한 줄씩 복사해 실행합니다.
 
 ```powershell
 codex plugin marketplace add wskim3486-hash/1km-content-marketplace
