@@ -1,6 +1,6 @@
 interface:
   display_name: 1km 딥리서치
-  short_description: 선정 주제의 배경·원인·사례를 취재노트로 정리합니다.
+  short_description: 첫 판단을 흔들고 사건을 새롭게 볼 근거를 조사합니다.
   default_prompt: Use $1km-research-topic to build a sourced deep-research brief for
     the selected 1km topic.
   icon_small: assets/icon.svg

@@ -1,6 +1,6 @@
 interface:
   display_name: 1km 전체 제작
-  short_description: 선정 아이템을 말맛 있는 최종 대본까지 완주합니다.
+  short_description: 선정 사건을 판단이 움직이는 최종 대본까지 완주합니다.
   default_prompt: Use $1km-full-production to take the selected 1km item through research,
     two fact-checks, outline, script, and final review.
   icon_small: assets/icon.svg

@@ -1,8 +1,8 @@
 interface:
   display_name: 1km 구성안 작성
-  short_description: 7~9분 영상의 훅·전개·해소 구조를 설계합니다.
+  short_description: 첫 판단이 흔들리고 갱신되는 이야기 구조를 설계합니다.
   default_prompt: Use $1km-build-outline to turn verified research into a 7–9 minute
-    1km episode structure.
+    story that moves from a strong event through a broken first assumption and back.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
