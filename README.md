@@ -29,6 +29,25 @@ codex plugin add 1km-content-production@1km-content-marketplace
 
 `codex` 명령을 찾을 수 없다는 메시지가 나오면 Codex를 먼저 설치한 뒤 다시 시도하세요. 관리자 권한으로 PowerShell을 열 필요는 없습니다.
 
+## 가장 쉬운 설치 방법: Codex에서 바로 설치하기
+
+1. Codex를 실행합니다.
+2. **새 작업**을 엽니다.
+3. 아래 내용을 그대로 복사해 Codex에 입력합니다.
+
+```text
+아래 GitHub 저장소를 Codex 플러그인 마켓플레이스로 등록하고, 그 안의 1km-content-production 플러그인을 설치해줘. 설치가 끝나면 정상적으로 설치됐는지도 확인해줘.
+
+https://github.com/wskim3486-hash/1km-content-marketplace.git
+```
+
+4. 설치 도중 권한 확인 창이 나오면 **허용**을 누릅니다.
+5. 설치가 완료되면 현재 작업을 닫고 **새 작업**을 엽니다.
+6. `1km 콘텐츠 제작` 플러그인이 보이면 설치가 완료된 것입니다.
+
+이 방법으로 설치되지 않을 때만 아래의 PowerShell 설치 방법을 이용하세요.
+
+
 ### 바로 사용하기
 
 새 작업에서 기사 주소와 함께 이렇게 요청하면 됩니다.
