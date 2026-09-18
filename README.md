@@ -1,190 +1,137 @@
 # 1km 콘텐츠 제작 플러그인
 
-선정 기사 한 건을 중심으로 아이템 발굴부터 딥리서치, 두 번의 팩트체크, 7~9분 구성안, 촬영 대본, 최종검수까지 진행하는 **GPT/Codex 전용 제작 플러그인**입니다.
+뉴스 아이템 발굴부터 딥리서치, 팩트체크, 7~9분 촬영 대본과 최종검수까지 도와주는 **GPT/Codex 전용 플러그인**입니다.
 
-이 저장소는 Windows 사용자가 GitHub 주소만으로 설치할 수 있도록 구성되어 있습니다. Claude Code와 Gemini CLI용 파일은 포함하지 않습니다.
+코딩을 몰라도 됩니다. Windows용 ChatGPT 앱에서 아래 순서대로 따라 하세요.
 
-## 무엇을 해주나요?
+## 처음 설치하기
 
-- 비정치 뉴스·생활 아이템 후보 10개 발굴
-- 후보 비교와 최종 아이템 선정
-- 선정 기사 중심 딥리서치
-- 대본 작성 전 1차 팩트체크
-- 7~9분 이야기형 구성안
-- 실제 말하듯 자연스러운 촬영 대본
-- 대본 완성 후 2차 팩트체크
-- 화면·법적 위험·낭독감을 포함한 최종검수
-- 의욕만 넘치는 신입 AI 캐릭터를 활용한 쉬어가기 대화
+### 1. Windows용 ChatGPT 앱을 엽니다
 
-핵심 흐름은 다음과 같습니다.
+[Windows용 ChatGPT 앱 안내](https://learn.chatgpt.com/docs/windows/windows-app)를 참고해 앱을 설치하고 로그인하세요.
 
-> 강한 사건 → 시청자의 첫 판단 → 판단을 흔드는 균열 → 실제 조건과 구조 → 비교·반례 → 처음 사건으로 복귀
+앱에서 **Codex**를 선택한 다음 **새 작업**을 엽니다. 일반 채팅이 아니라 Codex 작업에서 진행해야 합니다.
 
-## 사용 환경
+### 2. 아래 문장을 그대로 복사합니다
 
-- Windows 10 또는 Windows 11
-- [Windows용 Codex](https://learn.chatgpt.com/docs/windows/windows-app)가 설치되어 있고 PowerShell에서 `codex` 명령을 사용할 수 있어야 합니다.
-- GitHub 저장소가 공개되어 있으므로 별도의 GitHub 로그인은 필요하지 않습니다.
-- 별도의 MCP 서버나 외부 API 키는 필요하지 않습니다.
+```text
+아래 공개 GitHub 저장소를 Codex 플러그인 마켓플레이스로 등록하고,
+그 안의 1km-content-production 플러그인을 설치해줘.
 
-## 가장 쉬운 설치 방법
+main 브랜치를 사용하고, 이미 등록되어 있다면 최신 상태로 업데이트해줘.
+다른 플러그인은 변경하지 말아줘.
 
-Windows에서 PowerShell을 열고 다음 명령을 한 줄씩 실행하세요.
+설치가 끝나면 정상 설치 여부와 설치된 버전도 확인해줘.
+
+https://github.com/wskim3486-hash/1km-content-marketplace
+```
+
+### 3. Codex에 붙여넣고 실행합니다
+
+명령 실행이나 인터넷 사용을 허용할지 물으면 내용을 확인한 뒤 **허용**하세요.
+
+Codex가 설치 완료와 버전을 알려줄 때까지 기다리면 됩니다.
+
+정상 설치 버전은 다음과 같습니다.
+
+```text
+1.2.0+codex.20260918041714
+```
+
+### 4. 반드시 새 작업을 엽니다
+
+설치가 끝나면 현재 작업을 닫고 **새 Codex 작업**을 여세요. 새 작업부터 1km 플러그인이 적용됩니다.
+
+### 5. 설치를 확인합니다
+
+새 작업에서 아래 문장을 입력하세요.
+
+```text
+1km 플러그인을 사용해서 오늘 콘텐츠로 만들 만한 비정치 아이템 10개를 찾아줘.
+```
+
+아이템 후보가 나오면 설치가 완료된 것입니다.
+
+## 기사로 바로 시작하기
+
+만들고 싶은 기사가 있다면 새 Codex 작업에서 이렇게 요청하세요.
+
+```text
+1km 플러그인을 사용해서 아래 기사로 전체 제작 프로세스를 진행해줘.
+
+기사 주소:
+여기에 기사 주소 붙여넣기
+```
+
+전체 제작은 다음 순서로 진행됩니다.
+
+1. 아이템 발굴·선정
+2. 선정 기사 중심 딥리서치
+3. 대본 전 1차 팩트체크
+4. 7~9분 이야기형 구성안
+5. 실제 말하듯 쓴 촬영 대본
+6. 대본 완성 후 2차 팩트체크
+7. 최종검수와 촬영 인계
+
+## 기존 버전 업데이트하기
+
+이미 1km 플러그인이 설치되어 있다면 Codex 새 작업에서 아래 문장을 입력하세요.
+
+```text
+현재 설치된 1km-content-production 플러그인을 확인하고,
+아래 GitHub 저장소의 main 브랜치 기준 최신 버전으로 업데이트해줘.
+
+다른 플러그인은 변경하지 말고, 업데이트 후 설치된 버전을 확인해줘.
+
+https://github.com/wskim3486-hash/1km-content-marketplace
+```
+
+완료 후에는 다시 새 Codex 작업을 여세요.
+
+## 자연어 설치가 안 될 때
+
+Windows에서 **PowerShell**을 열고 아래 두 줄을 한 줄씩 실행하세요.
 
 ```powershell
 codex plugin marketplace add wskim3486-hash/1km-content-marketplace --ref main
 codex plugin add 1km-content-production@1km-content-marketplace
 ```
 
-설치가 끝나면 Codex를 다시 시작하거나 새 작업을 여세요. 기존 대화에서는 새로 설치한 스킬이 바로 나타나지 않을 수 있습니다.
-
-설치 여부는 다음 명령으로 확인할 수 있습니다.
-
-```powershell
-codex plugin marketplace list
-codex plugin list
-```
-
-## 설치 스크립트 사용
-
-저장소를 ZIP으로 내려받았거나 복제했다면 저장소 폴더에서 다음 명령을 실행해도 됩니다.
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\install-windows.ps1
-```
-
-이 스크립트도 로컬 폴더를 등록하지 않고 이 GitHub 저장소의 `main` 브랜치를 등록합니다.
-
-## 바로 사용하기
-
-기사가 정해져 있다면 새 Codex 작업에서 다음처럼 요청하세요.
-
-```text
-이 기사로 1km 전체 제작 프로세스를 진행해줘.
-기사: 여기에 기사 주소를 붙여넣기
-```
-
-아직 주제가 없다면 다음처럼 시작할 수 있습니다.
-
-```text
-오늘 1km 콘텐츠로 만들 만한 비정치 아이템 10개를 찾아줘.
-```
-
-일부 단계까지만 요청해도 됩니다.
-
-```text
-이 후보들을 비교해서 지금 제작할 아이템 하나를 추천해줘.
-```
-
-```text
-이 기사로 딥리서치와 대본 전 1차 팩트체크까지만 진행해줘.
-```
-
-```text
-이 구성안으로 7~9분 촬영 대본을 써줘.
-```
-
-```text
-이 대본을 2차 팩트체크하고 최종검수해줘.
-```
-
-## 전체 제작 순서
-
-전체 제작을 요청하면 아래 순서를 유지합니다.
-
-1. 아이템 발굴
-2. 아이템 선정
-3. 선정 기사 중심 딥리서치
-4. 대본 전 1차 팩트체크
-5. 7~9분 이야기형 구성안
-6. 촬영 대본
-7. 대본 완성 후 2차 팩트체크
-8. 최종검수와 촬영 인계
-
-두 번의 팩트체크는 생략하거나 순서를 바꾸지 않습니다.
-
-## 결과물 구성
-
-전체 제작 결과는 촬영 판단이 가능하도록 0~9 패키지로 정리됩니다.
-
-0. 제작 상태와 판정
-1. 선정 기사와 한 줄 기획
-2. 딥리서치 취재노트
-3. 1차 팩트체크
-4. 이야기형 구성안
-5. 촬영 대본
-6. AI 쉬어가기 대화
-7. 2차 팩트체크
-8. 최종검수
-9. 촬영·편집 인계
-
-## 업데이트
-
-PowerShell에서 다음 명령을 실행하세요.
+마켓플레이스가 이미 등록되어 있다는 메시지가 나오면 아래 두 줄을 실행하세요.
 
 ```powershell
 codex plugin marketplace upgrade 1km-content-marketplace
 codex plugin add 1km-content-production@1km-content-marketplace
 ```
 
-또는 저장소 폴더에서 업데이트 스크립트를 실행할 수 있습니다.
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\update-windows.ps1
-```
-
-업데이트 후에는 Codex를 다시 시작하거나 새 작업을 여세요.
-
-## 삭제
-
-```powershell
-codex plugin remove 1km-content-production@1km-content-marketplace
-codex plugin marketplace remove 1km-content-marketplace
-```
+실행이 끝나면 ChatGPT 앱을 다시 시작하고 새 Codex 작업을 여세요.
 
 ## 문제가 생겼을 때
 
-### `codex` 명령을 찾을 수 없다고 나오는 경우
+### `codex` 명령을 찾을 수 없어요
 
-Codex가 설치되어 있는지 확인하고 PowerShell을 새로 연 뒤 다시 실행하세요.
+Windows용 ChatGPT 앱과 Codex가 설치되어 있는지 확인하세요. 앱을 업데이트한 뒤 PowerShell과 ChatGPT 앱을 다시 열어 보세요.
 
-### 플러그인이 보이지 않는 경우
+### 설치됐는데 1km가 작동하지 않아요
 
-1. `codex plugin marketplace list`에서 `1km-content-marketplace`가 보이는지 확인합니다.
-2. `codex plugin list`에서 `1km-content-production`이 보이는지 확인합니다.
-3. 업데이트 명령을 다시 실행합니다.
-4. Codex를 완전히 종료한 뒤 다시 열고 새 작업을 시작합니다.
+설치했던 작업을 계속 사용하지 말고 새 Codex 작업을 여세요. 그래도 안 되면 ChatGPT 앱을 완전히 종료했다가 다시 실행하세요.
 
-### 마켓플레이스가 이미 등록되어 있다고 나오는 경우
+### 기존 버전과 충돌하는 것 같아요
 
-새로 등록하지 말고 업데이트와 설치만 실행하세요.
-
-```powershell
-codex plugin marketplace upgrade 1km-content-marketplace
-codex plugin add 1km-content-production@1km-content-marketplace
-```
-
-## 저장소 구조
+Codex에 다음과 같이 요청하세요.
 
 ```text
-1km-content-marketplace/
-├── .agents/plugins/marketplace.json
-├── plugins/1km-content-production/
-│   ├── .codex-plugin/plugin.json
-│   ├── references/
-│   └── skills/
-├── install-windows.ps1
-├── update-windows.ps1
-└── README.md
+기존 1km 플러그인과 마켓플레이스 상태를 확인해줘.
+1km 관련 기존 설치만 안전하게 제거한 뒤 아래 저장소의 main 브랜치로 다시 설치해줘.
+다른 플러그인은 변경하지 말아줘.
+
+https://github.com/wskim3486-hash/1km-content-marketplace
 ```
 
-실제 플러그인 파일은 `plugins/1km-content-production` 한 곳에만 있습니다. 저장소 루트에 같은 스킬을 중복 보관하지 않습니다.
+## 알아두기
 
-## 현재 배포 기준
-
-- 플러그인: `1km-content-production`
-- 매니페스트 버전: `1.2.0+codex.20260918041714`
-- 기준일: 2026-08-25
-- 대상: GPT/Codex, Windows
-
-플러그인의 제작 기준은 `plugins/1km-content-production/references/approved-narrative-standard.md`와 각 스킬의 `SKILL.md`에 들어 있습니다.
+- Windows용 GPT/Codex 전용입니다.
+- Claude Code와 Gemini CLI용 플러그인이 아닙니다.
+- 별도의 MCP 서버나 외부 API 키는 필요하지 않습니다.
+- 사실 오류를 막기 위해 대본 작성 전과 후에 팩트체크를 두 번 진행합니다.
+- 최종 결과는 실제 촬영 전에 사람이 한 번 더 확인하는 것을 권장합니다.
